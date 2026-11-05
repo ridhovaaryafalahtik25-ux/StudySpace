@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudySpace, ruang belajar digital untuk belajar lebih terarah.">
+
+    <title>StudySpace | Beranda</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a class="skip-link" href="#main-content">
+        Lewati ke konten utama
+    </a>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <a class="brand-mark" href="index.html">S</a>
+
+        <nav class="side-nav" aria-label="Navigasi">
+            <a href="index.html" title="Beranda">⌂</a>
+            <a href="panduan.html" title="Panduan Belajar">▤</a>
+            <a href="tips.html" title="Tips Belajar">✦</a>
+            <a href="tentang-kami.html" title="Tentang Kami">ⓘ</a>
+        </nav>
+
+        <a class="side-nav side-bottom" href="login.html" title="Login">
+            ♙
+        </a>
+
+    </aside>
+
+    <!-- Workspace -->
+    <div class="workspace">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="crumb">
+                StudySpace / Beranda
+            </div>
+
+            <div class="top-actions">
+                <input
+                    class="search"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Cari"
+                >
+
+                <a class="avatar" href="login.html" aria-label="Login">
+                    U
+                </a>
+            </div>
+
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" class="page">
+
+            <!-- Hero Section -->
+            <section class="panel hero">
+
+                <div>
+                    <p class="eyebrow">Ruang belajar digital</p>
+
+                    <h1>
+                        Belajar Lebih Terarah,
+                        <br>
+                        Raih Hasil Lebih Baik.
+                    </h1>
+
+                    <p>
+                        Mulai belajar dengan cara yang lebih teratur.
+                        Temukan panduan, susun jadwal, dan kelola tugasmu
+                        dalam satu ruang.
+                    </p>
+
+                    <div class="button-row" style="margin-top: 17px">
+
+                        <a class="button primary" href="panduan.html">
+                            Mulai Belajar
+                        </a>
+
+                        <a class="button secondary" href="tips.html">
+                            Lihat Fitur
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="hero-art">
+                    <span class="hero-placeholder">
+                        STUDYSPACE ✦
+                    </span>
+                </div>
+
+            </section>
+
+            <!-- Section Heading -->
+            <div class="section-head">
+
+                <h2>Panduan Belajar</h2>
+
+                <a class="small-link" href="panduan.html">
+                    Lihat semua →
+                </a>
+
+            </div>
+
+            <!-- Home Grid -->
+            <section class="home-grid">
+
+                <!-- Guide List -->
+                <div class="guide-list">
+
+                    <article class="panel guide-row">
+
+                        <div class="guide-thumb">▧</div>
+
+                        <div>
+                            <h3>Metode Pomodoro</h3>
+
+                            <p>
+                                Atur waktu belajar dan istirahat agar tetap
+                                fokus saat mengerjakan sesuatu.
+                            </p>
+
+                            <a class="small-link" href="panduan-detail.html">
+                                Pelajari →
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="panel guide-row">
+
+                        <div class="guide-thumb">▧</div>
+
+                        <div>
+                            <h3>Active Recall</h3>
+
+                            <p>
+                                Latih ingatan dengan mencoba mengingat kembali
+                                materi tanpa melihat catatan.
+                            </p>
+
+                            <a class="small-link" href="panduan-detail.html">
+                                Pelajari →
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="panel guide-row">
+
+                        <div class="guide-thumb">▧</div>
+
+                        <div>
+                            <h3>Spaced Repetition</h3>
+
+                            <p>
+                                Ulangi materi secara berkala supaya informasi
+                                lebih mudah diingat.
+                            </p>
+
+                            <a class="small-link" href="panduan-detail.html">
+                                Pelajari →
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="panel guide-row">
+
+                        <div class="guide-thumb">▧</div>
+
+                        <div>
+                            <h3>Cornell Notes</h3>
+
+                            <p>
+                                Susun catatan menjadi lebih rapi dan mudah
+                                dipelajari kembali.
+                            </p>
+
+                            <a class="small-link" href="panduan-detail.html">
+                                Pelajari →
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Right Sidebar -->
+                <aside class="right-stack">
+
+                    <!-- Calendar -->
+                    <section class="panel mini-panel">
+
+                        <h3>Kalender</h3>
+
+                        <div class="calendar-mini">
+
+                            <span>Sn</span>
+                            <span>Sl</span>
+                            <span>Rb</span>
+                            <span>Km</span>
+                            <span>Jm</span>
+                            <span>Sb</span>
+                            <span>Mg</span>
+
+                            <!-- Calendar Dates -->
+                            <script>
+                                for (let n = 1; n <= 28; n++) {
+                                    const date = document.createElement("span");
+
+                                    if (n === 5) {
+                                        date.classList.add("today");
+                                    }
+
+                                    date.textContent = n;
+
+                                    document.querySelector(".calendar-mini").appendChild(date);
+                                }
+                            </script>
+
+                        </div>
+
+                        <a class="small-link" href="planner.html">
+                            Buka planner →
+                        </a>
+
+                    </section>
+
+                    <!-- To Do List -->
+                    <section class="panel mini-panel">
+
+                        <h3>To Do List</h3>
+
+                        <ul class="todo-mini">
+
+                            <li>
+                                <input type="checkbox">
+                                Membaca materi
+                            </li>
+
+                            <li>
+                                <input type="checkbox">
+                                Mengerjakan tugas
+                            </li>
+
+                            <li>
+                                <input type="checkbox">
+                                Review catatan
+                            </li>
+
+                        </ul>
+
+                        <a class="small-link" href="tips.html#todo">
+                            Kelola tugas →
+                        </a>
+
+                    </section>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            © 2026 StudySpace · Belajar Lebih Terarah, Raih Hasil Lebih Baik.
+        </footer>
+
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+
+        <a href="index.html">
+            ⌂
+            <small>Home</small>
+        </a>
+
+        <a href="panduan.html">
+            ▤
+            <small>Panduan</small>
+        </a>
+
+        <a href="tips.html">
+            ✦
+            <small>Tips</small>
+        </a>
+
+        <a href="tentang-kami.html">
+            ⓘ
+            <small>About</small>
+        </a>
+
+    </nav>
+
+</body>
+</html>

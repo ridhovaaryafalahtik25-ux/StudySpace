@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudySpace | Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Login Page -->
+    <main class="login-page">
+
+        <section class="login-card">
+
+            <!-- Login Illustration -->
+            <div class="login-art">
+                STUDYSPACE ✦
+            </div>
+
+            <!-- Login Form -->
+            <form class="login-form" id="login-form">
+
+                <p class="eyebrow">
+                    Selamat datang kembali
+                </p>
+
+                <h1>LOGIN</h1>
+
+                <!-- Email Input -->
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Masukkan email"
+                    required
+                >
+
+                <!-- Password Input -->
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Masukkan password"
+                    required
+                >
+
+                <!-- Forgot Password -->
+                <a
+                    href="#"
+                    style="font-size: 10px; text-align: right; margin-top: -8px;"
+                >
+                    Forgot password?
+                </a>
+
+                <!-- Login Button -->
+                <button class="button primary" type="submit">
+                    Login
+                </button>
+
+                <!-- Sign Up -->
+                <p id="login-message">
+                    Belum punya akun?
+                    <a href="#" id="signup-link">
+                        Sign up
+                    </a>
+                </p>
+
+                <!-- Back to Home -->
+                <p>
+                    <a href="index.html">
+                        ← Kembali ke Beranda
+                    </a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Login Prototype Script -->
+    <script>
+
+        // Login Form
+        document.querySelector('#login-form').addEventListener('submit', function(e) {
+
+            e.preventDefault();
+
+            document.querySelector('#login-message').textContent =
+                'Login ini hanya tampilan prototype untuk demonstrasi.';
+
+        });
+
+        // Sign Up Link
+        document.querySelector('#signup-link').addEventListener('click', function(e) {
+
+            e.preventDefault();
+
+            alert('Fitur pendaftaran belum diaktifkan pada prototype.');
+
+        });
+
+    </script>
+
+</body>
+</html>

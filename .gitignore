@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local environment and credentials
+.env
+.env.*
+
+# Dependencies, build output, and caches
+node_modules/
+/dist/
+/build/
+coverage/
+.cache/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.temp
