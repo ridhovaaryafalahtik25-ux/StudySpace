@@ -1,118 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>StudySpace | Login</title>
-
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masuk · StudySpace</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-
-    <!-- Login Page -->
-    <main class="login-page">
-
-        <section class="login-card">
-
-            <!-- Login Illustration -->
-            <div class="login-art">
-                STUDYSPACE ✦
-            </div>
-
-            <!-- Login Form -->
-            <form class="login-form" id="login-form">
-
-                <p class="eyebrow">
-                    Selamat datang kembali
-                </p>
-
-                <h1>LOGIN</h1>
-
-                <!-- Email Input -->
-                <label for="email">
-                    Email
-                </label>
-
-                <input
-                    id="email"
-                    type="email"
-                    placeholder="Masukkan email"
-                    required
-                >
-
-                <!-- Password Input -->
-                <label for="password">
-                    Password
-                </label>
-
-                <input
-                    id="password"
-                    type="password"
-                    placeholder="Masukkan password"
-                    required
-                >
-
-                <!-- Forgot Password -->
-                <a
-                    href="#"
-                    style="font-size: 10px; text-align: right; margin-top: -8px;"
-                >
-                    Forgot password?
-                </a>
-
-                <!-- Login Button -->
-                <button class="button primary" type="submit">
-                    Login
-                </button>
-
-                <!-- Sign Up -->
-                <p id="login-message">
-                    Belum punya akun?
-                    <a href="#" id="signup-link">
-                        Sign up
-                    </a>
-                </p>
-
-                <!-- Back to Home -->
-                <p>
-                    <a href="index.html">
-                        ← Kembali ke Beranda
-                    </a>
-                </p>
-
-            </form>
-
-        </section>
-
-    </main>
-
-    <!-- Login Prototype Script -->
-    <script>
-
-        // Login Form
-        document.querySelector('#login-form').addEventListener('submit', function(e) {
-
-            e.preventDefault();
-
-            document.querySelector('#login-message').textContent =
-                'Login ini hanya tampilan prototype untuk demonstrasi.';
-
-        });
-
-        // Sign Up Link
-        document.querySelector('#signup-link').addEventListener('click', function(e) {
-
-            e.preventDefault();
-
-            alert('Fitur pendaftaran belum diaktifkan pada prototype.');
-
-        });
-
-    </script>
-
+<body data-page="login">
+<section class="view active login-page" id="login">
+    <div class="login-card">
+      <div class="login-art" aria-hidden="true"><span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><strong>StudySpace</strong><span>Belajar lebih terarah, raih hasil lebih baik.</span></div>
+      <form class="login-form" id="loginForm">
+        <h1>Masuk</h1>
+        <label>Email<input type="email" required autocomplete="email"></label>
+        <label>Kata sandi<input type="password" required autocomplete="current-password"></label>
+        <a class="forgot" href="login.html">Lupa kata sandi?</a>
+        <button class="btn" type="submit">Masuk</button>
+        <hr class="divider">
+        <div class="social">
+          <button type="button" aria-label="Masuk dengan Google">G</button>
+          <button type="button" aria-label="Masuk dengan Facebook">f</button>
+          <button type="button" aria-label="Masuk dengan Apple">A</button>
+        </div>
+        <p class="signup">Belum punya akun? <a href="login.html">Daftar</a></p>
+      </form>
+    </div>
+  </section>
+<script src="js/script.js"></script>
 </body>
 </html>

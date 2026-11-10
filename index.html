@@ -1,313 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StudySpace, ruang belajar digital untuk belajar lebih terarah.">
-
-    <title>StudySpace | Beranda</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beranda · StudySpace</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-
-    <!-- Skip Link -->
-    <a class="skip-link" href="#main-content">
-        Lewati ke konten utama
-    </a>
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-
-        <a class="brand-mark" href="index.html">S</a>
-
-        <nav class="side-nav" aria-label="Navigasi">
-            <a href="index.html" title="Beranda">⌂</a>
-            <a href="panduan.html" title="Panduan Belajar">▤</a>
-            <a href="tips.html" title="Tips Belajar">✦</a>
-            <a href="tentang-kami.html" title="Tentang Kami">ⓘ</a>
-        </nav>
-
-        <a class="side-nav side-bottom" href="login.html" title="Login">
-            ♙
-        </a>
-
-    </aside>
-
-    <!-- Workspace -->
-    <div class="workspace">
-
-        <!-- Header -->
-        <header class="topbar">
-
-            <div class="crumb">
-                StudySpace / Beranda
-            </div>
-
-            <div class="top-actions">
-                <input
-                    class="search"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Cari"
-                >
-
-                <a class="avatar" href="login.html" aria-label="Login">
-                    U
-                </a>
-            </div>
-
-        </header>
-
-        <!-- Main Content -->
-        <main id="main-content" class="page">
-
-            <!-- Hero Section -->
-            <section class="panel hero">
-
-                <div>
-                    <p class="eyebrow">Ruang belajar digital</p>
-
-                    <h1>
-                        Belajar Lebih Terarah,
-                        <br>
-                        Raih Hasil Lebih Baik.
-                    </h1>
-
-                    <p>
-                        Mulai belajar dengan cara yang lebih teratur.
-                        Temukan panduan, susun jadwal, dan kelola tugasmu
-                        dalam satu ruang.
-                    </p>
-
-                    <div class="button-row" style="margin-top: 17px">
-
-                        <a class="button primary" href="panduan.html">
-                            Mulai Belajar
-                        </a>
-
-                        <a class="button secondary" href="tips.html">
-                            Lihat Fitur
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="hero-art">
-                    <span class="hero-placeholder">
-                        STUDYSPACE ✦
-                    </span>
-                </div>
-
-            </section>
-
-            <!-- Section Heading -->
-            <div class="section-head">
-
-                <h2>Panduan Belajar</h2>
-
-                <a class="small-link" href="panduan.html">
-                    Lihat semua →
-                </a>
-
-            </div>
-
-            <!-- Home Grid -->
-            <section class="home-grid">
-
-                <!-- Guide List -->
-                <div class="guide-list">
-
-                    <article class="panel guide-row">
-
-                        <div class="guide-thumb">▧</div>
-
-                        <div>
-                            <h3>Metode Pomodoro</h3>
-
-                            <p>
-                                Atur waktu belajar dan istirahat agar tetap
-                                fokus saat mengerjakan sesuatu.
-                            </p>
-
-                            <a class="small-link" href="panduan-detail.html">
-                                Pelajari →
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <article class="panel guide-row">
-
-                        <div class="guide-thumb">▧</div>
-
-                        <div>
-                            <h3>Active Recall</h3>
-
-                            <p>
-                                Latih ingatan dengan mencoba mengingat kembali
-                                materi tanpa melihat catatan.
-                            </p>
-
-                            <a class="small-link" href="panduan-detail.html">
-                                Pelajari →
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <article class="panel guide-row">
-
-                        <div class="guide-thumb">▧</div>
-
-                        <div>
-                            <h3>Spaced Repetition</h3>
-
-                            <p>
-                                Ulangi materi secara berkala supaya informasi
-                                lebih mudah diingat.
-                            </p>
-
-                            <a class="small-link" href="panduan-detail.html">
-                                Pelajari →
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <article class="panel guide-row">
-
-                        <div class="guide-thumb">▧</div>
-
-                        <div>
-                            <h3>Cornell Notes</h3>
-
-                            <p>
-                                Susun catatan menjadi lebih rapi dan mudah
-                                dipelajari kembali.
-                            </p>
-
-                            <a class="small-link" href="panduan-detail.html">
-                                Pelajari →
-                            </a>
-                        </div>
-
-                    </article>
-
-                </div>
-
-                <!-- Right Sidebar -->
-                <aside class="right-stack">
-
-                    <!-- Calendar -->
-                    <section class="panel mini-panel">
-
-                        <h3>Kalender</h3>
-
-                        <div class="calendar-mini">
-
-                            <span>Sn</span>
-                            <span>Sl</span>
-                            <span>Rb</span>
-                            <span>Km</span>
-                            <span>Jm</span>
-                            <span>Sb</span>
-                            <span>Mg</span>
-
-                            <!-- Calendar Dates -->
-                            <script>
-                                for (let n = 1; n <= 28; n++) {
-                                    const date = document.createElement("span");
-
-                                    if (n === 5) {
-                                        date.classList.add("today");
-                                    }
-
-                                    date.textContent = n;
-
-                                    document.querySelector(".calendar-mini").appendChild(date);
-                                }
-                            </script>
-
-                        </div>
-
-                        <a class="small-link" href="planner.html">
-                            Buka planner →
-                        </a>
-
-                    </section>
-
-                    <!-- To Do List -->
-                    <section class="panel mini-panel">
-
-                        <h3>To Do List</h3>
-
-                        <ul class="todo-mini">
-
-                            <li>
-                                <input type="checkbox">
-                                Membaca materi
-                            </li>
-
-                            <li>
-                                <input type="checkbox">
-                                Mengerjakan tugas
-                            </li>
-
-                            <li>
-                                <input type="checkbox">
-                                Review catatan
-                            </li>
-
-                        </ul>
-
-                        <a class="small-link" href="tips.html#todo">
-                            Kelola tugas →
-                        </a>
-
-                    </section>
-
-                </aside>
-
-            </section>
-
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            © 2026 StudySpace · Belajar Lebih Terarah, Raih Hasil Lebih Baik.
-        </footer>
-
-    </div>
-
-    <!-- Mobile Navigation -->
-    <nav class="mobile-nav">
-
-        <a href="index.html">
-            ⌂
-            <small>Home</small>
-        </a>
-
-        <a href="panduan.html">
-            ▤
-            <small>Panduan</small>
-        </a>
-
-        <a href="tips.html">
-            ✦
-            <small>Tips</small>
-        </a>
-
-        <a href="tentang-kami.html">
-            ⓘ
-            <small>About</small>
-        </a>
-
+<body data-page="profil">
+<header class="topbar">
+<a class="logo" href="index.html">StudySpace</a>
+  <form class="search" role="search" onsubmit="return false">
+    <input type="search" placeholder="Cari" aria-label="Cari">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+  </form>
+  <a class="avatar-btn" href="pengaturan.html" aria-label="Pengaturan" title="Pengaturan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4"/></svg></a>
+</header>
+<div class="shell">
+  <nav class="sidebar" aria-label="Navigasi utama">
+      <a href="index.html" aria-current="page" title="Beranda" aria-label="Beranda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></a>
+      <a href="timer.html" title="Timer" aria-label="Timer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></a>
+      <a href="planner.html" title="Calendar planner" aria-label="Calendar planner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
+      <a href="tips.html" title="Tips belajar" aria-label="Tips belajar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 22h4"/><path d="M15.1 14c.2-1 .7-1.7 1.4-2.5A4.7 4.7 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.4 2.5"/></svg></a>
+      <hr>
+      <a href="panduan.html" title="Panduan belajar" aria-label="Panduan belajar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></a>
+      <a href="sumber.html" title="Sumber belajar" aria-label="Sumber belajar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></a>
     </nav>
+  <main>
+    <section class="view active" id="profil">
+        <div class="cover" aria-hidden="true"></div>
+        <div class="id-card">
+          <div class="big-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h1 id="userName" style="font-size:1.7rem;font-weight:800">Nama</h1>
+          <p class="id-sub">Selamat datang di ruang belajarmu.</p>
+        </div>
 
+        <div class="quick">
+          <a href="timer.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><span><strong>Mulai Timer</strong><small>Fokus dengan Pomodoro</small></span></a>
+          <a href="planner.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><span><strong>Buka Planner</strong><small>Atur jadwal mingguan</small></span></a>
+          <a href="tips.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 22h4"/><path d="M15.1 14c.2-1 .7-1.7 1.4-2.5A4.7 4.7 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.4 2.5"/></svg></span><span><strong>Tips Belajar</strong><small>Kebiasaan yang efektif</small></span></a>
+          <a href="sumber.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span><span><strong>Sumber Belajar</strong><small>Artikel, kursus, jurnal</small></span></a>
+        </div>
+        <div class="profile-grid">
+          <div>
+            <div class="box" style="min-height:210px"><h3>Tentang saya</h3><p>Ceritakan sedikit tentang dirimu.</p></div>
+            <div class="box"><h3>Statistik</h3><p>Sesi fokus, jam belajar, dan rekor harianmu akan muncul di sini.</p></div>
+          </div>
+          <div>
+            <div class="box" style="min-height:210px"><h3>Perjalanan</h3><p>Pencapaian belajarmu dari waktu ke waktu.</p></div>
+            <div class="box tall"><h3>Aktivitas terbaru</h3><p>Belum ada aktivitas.</p></div>
+          </div>
+        </div>
+      </section>
+    <footer class="foot">© 2026 StudySpace · Belajar Lebih Terarah, Raih Hasil Lebih Baik.</footer>
+  </main>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
