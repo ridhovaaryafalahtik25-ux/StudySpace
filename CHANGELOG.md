@@ -10,3 +10,4 @@
 - Memperbarui README
 - Memperbarui Requairements
 - Memperbaiki Struktur Repo
+- test
