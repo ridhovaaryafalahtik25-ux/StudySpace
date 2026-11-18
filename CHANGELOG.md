@@ -8,3 +8,5 @@
 - Menambahkan dokumen requirement, testing, dan README.
 ## 2.1 - 2026-11-18
 - Memperbarui README
+- Memperbarui Requairements
+- Memperbaiki Struktur Repo
