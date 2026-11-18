@@ -6,14 +6,6 @@
 
 **Tema SDGs:** SDG 4 – Pendidikan Berkualitas (Quality Education)
 
-| | |
-|---|---|
-| 🌐 **Website** | `<url-website-github-pages>` |
-| 🗺️ **Sitemap** | `<url-website-github-pages>/sitemap.xml` |
-| 📁 **Repositori** | `<url-repositori>` |
-
----
-
 ## Deskripsi
 
 StudySpace adalah website yang menyediakan informasi sekaligus alat bantu belajar dalam satu platform. Pelajar dan mahasiswa sering kesulitan mengatur waktu belajar, menjaga fokus, mengelola tugas, dan mencatat materi, sementara alat bantunya tersebar di banyak aplikasi. StudySpace menggabungkan panduan belajar, kalender jadwal, timer Pomodoro, To-Do List, dan catatan belajar di satu tempat.
@@ -114,8 +106,10 @@ Ringkasan analisis 5W1H StudySpace. Rincian data dan daftar pustaka lengkap ada 
 
 ## Teknologi yang Digunakan
 
-- **HTML** – struktur halaman
-- **CSS** – tata letak, komponen, dan responsivitas
+HTML5 semantic
+CSS3 dengan custom properties dan responsive layout
+Figma-exported SVG/JPG assets
+-
 
 ## Kebutuhan Nonfungsional
 
@@ -167,12 +161,12 @@ Tidak diperlukan instalasi tambahan.
 
 | Anggota | Peran | Fokus | Hasil Utama |
 |---|---|---|---|
-| Ridhova Arya Falah | Ketua dan Koordinator | Jadwal, konfirmasi data, dokumentasi proyek | `README.md` |
-| Naailah Risqullah | Analis dan Pengelola Konten | Kebutuhan, teks, pemeriksaan informasi | `requirements.md` |
-| Aykho Praysila Zai | Perancang dan Pengembang HTML | Peta konten, wireframe, struktur halaman | `index.html` |
-| Kaylin Patricia | Pengembang CSS (Tata Letak) | Tampilan dan responsivitas | `css/style.css` |
-| Putri Anisa La Ananila | Pengembang CSS (Komponen) dan Aset | Tombol, tabel, fokus keyboard, gambar | `css/style.css`, `assets/images/` |
-| Dean M Wahyudan | Penguji dan Dokumentator | Pengujian, bukti, riwayat perubahan | `testing.md`, `CHANGELOG.md` |
+| Ridhova Arya Falah | Ketua, Koordinator, dan Penguji | Jadwal, konfirmasi data, dokumentasi proyek, pengujian | `README.md`, `testing.md`, `CHANGELOG.md` |
+| Naailah Risqullah | Analis, Pengelola Konten, dan Penguji | Kebutuhan, teks, pemeriksaan informasi, pengujian | `requirements.md`, `testing.md` |
+| Aykho Praysila Zai | Perancang | Peta konten, wireframe, mockup, prototipe | `docs/site-structure.md`, `docs/wireframe-mockup/` |
+| Dean M Wahyudan | Perancang | Wireframe, mockup, prototipe | `docs/wireframe-mockup/` |
+| Kaylin Patricia | Pengembang (HTML, CSS, JavaScript) | Seluruh pemrograman: struktur halaman, tata letak, responsivitas, fitur interaktif | `index.html`, `css/style.css`, `js/script.js` |
+| Putri Anisa La Ananila | Pengembang (HTML, CSS, JavaScript) dan Aset | Seluruh pemrograman: komponen, fokus keyboard, fitur interaktif, gambar | `index.html`, `css/style.css`, `js/script.js`, `assets/images/` |
 
 ## Dokumentasi Perancangan
 
