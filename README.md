@@ -193,7 +193,3 @@ Dokumen perancangan awal disimpan di repositori ini:
 ## Kaitan dengan SDG 4
 
 StudySpace mendukung **SDG 4: Pendidikan Berkualitas** dengan menyediakan panduan dan alat bantu belajar yang gratis, mudah diakses lewat browser, dan tidak memerlukan aplikasi tambahan.
-
----
-
-*Dibuat oleh kelompok StudySpace.*
