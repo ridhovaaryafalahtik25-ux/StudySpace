@@ -177,6 +177,7 @@ Dokumen perancangan awal disimpan di repositori ini:
 | Rancangan Kebutuhan (Requirement Analysis, termasuk 5W1H dan data pendukung) | [`requirements.md`](requirements.md) |
 | Site Structure (struktur navigasi dan flowchart) | [`docs/site-structure.md`](docs/site-structure.md) |
 | Wireframe dan Mockup | [`docs/wireframe-mockup/`](docs/wireframe-mockup/) |
+| Menambah Mockup pada link figma | [`Figma – StudySpace`] (https://www.figma.com/design/hRGDXhytgBIzLPUVqqmImd/Untitled?node-id=0-1&t=GTYdTBkAxTFpdV2G-1)
 
 ## Dokumentasi Pendukung
 
