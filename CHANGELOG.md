@@ -10,4 +10,5 @@
 - Memperbarui README
 - Memperbarui Requairements
 - Memperbaiki Struktur Repo
-- test dean
+## 2.2 - 2026-11-20
+- Menambahkan Mockup di link figma.
