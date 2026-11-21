@@ -12,3 +12,7 @@
 - Memperbaiki Struktur Repo
 ## 2.2 - 2026-11-20
 - Menambahkan Mockup di link figma.
+## 2.3 - 2026-11-21
+- Membuat Wireframe terbaru
+## 2.4 - 2026-11-22
+- Update Mockup Terbaru
