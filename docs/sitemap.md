@@ -25,8 +25,8 @@ Dokumen struktur navigasi dan alur halaman website **StudySpace**. Rincian kebut
 ```
 StudySpace
 ├── Login
-│   ├── Sign Up                       (belum ditentukan)
-│   └── Forgot Password               (belum ditentukan)
+│   ├── Sign Up                     
+│   └── Forgot Password               
 │
 └── Halaman Utama (setelah login, dengan sidebar navigasi)
     ├── Beranda (Homepage)
