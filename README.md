@@ -130,19 +130,36 @@ Figma-exported SVG/JPG assets
 
 ```
 StudySpace/
-├── index.html
+│
+├── asset/
+│   └── img/
+│
 ├── css/
 │   └── style.css
-├── assets/
-│   └── images/
-├── sitemap.xml
-├── README.md
+│
+├── docs/
+│   ├── requirements.md
+│   ├── sitemap.md
+│   ├── wireframe-mockup/
+│   └── testing.md
+│
+├── js/
+│   └── script.js
+│
+├── .gitignore
 ├── CHANGELOG.md
-└── docs/
-    ├── site-structure.md (coming soon)
-    ├── requirements.md
-    ├── testing.md
-    └── wireframe-mockup/ (coming soon)
+├── README.md
+│
+├── artikel.html
+├── index.html
+├── login.html
+├── panduan.html
+├── pengaturan.html
+├── planner.html
+├── sumber.html
+├── tentang.html
+├── timer.html
+└── tips.html
 ```
 
 ## Cara Menjalankan
