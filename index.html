@@ -1,59 +1,179 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beranda ·ssssssStudySpace</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda · StudySpace</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body data-page="profil">
-<header class="topbar">
-<a class="logo" href="index.html">StudySpace</a>
-  <form class="search" role="search" onsubmit="return false">
-    <input type="search" placeholder="Cari" aria-label="Cari">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-  </form>
-  <a class="avatar-btn" href="pengaturan.html" aria-label="Pengaturan" title="Pengaturan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4"/></svg></a>
-</header>
-<div class="shell">
-  <nav class="sidebar" aria-label="Navigasi utama">
-      <a href="index.html" aria-current="page" title="Beranda" aria-label="Beranda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></a>
-      <a href="timer.html" title="Timer" aria-label="Timer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></a>
-      <a href="planner.html" title="Calendar planner" aria-label="Calendar planner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
-      <a href="tips.html" title="Tips belajar" aria-label="Tips belajar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 22h4"/><path d="M15.1 14c.2-1 .7-1.7 1.4-2.5A4.7 4.7 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.4 2.5"/></svg></a>
+  <header class="topbar">
+    <a class="logo" href="index.html">StudySpace</a>
+    <a class="avatar-btn" href="pengaturan.html" aria-label="Pengaturan" title="Pengaturan"><svg viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"
+        aria-hidden="true" focusable="false">
+        <path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4" />
+      </svg></a>
+  </header>
+  <div class="shell">
+    <nav class="sidebar" aria-label="Navigasi utama">
+      <a href="index.html" aria-current="page" title="Beranda" aria-label="Beranda"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+          focusable="false">
+          <path d="M3 10.5 12 3l9 7.5V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <path d="M9 22V12h6v10" />
+        </svg></a>
+      <a href="timer.html" title="Timer" aria-label="Timer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 6v6l4 2" />
+        </svg></a>
+      <a href="planner.html" title="Calendar planner" aria-label="Calendar planner"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+          focusable="false">
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+          <path d="M16 2v4M8 2v4M3 10h18" />
+        </svg></a>
       <hr>
-      <a href="panduan.html" title="Panduan belajar" aria-label="Panduan belajar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></a>
-      <a href="sumber.html" title="Sumber belajar" aria-label="Sumber belajar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></a>
+      <a href="panduan.html" title="Panduan belajar" aria-label="Panduan belajar"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+          focusable="false">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg></a>
+      <a href="sumber.html" title="Sumber belajar" aria-label="Sumber belajar"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+          focusable="false">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+        </svg></a>
     </nav>
-  <main>
-    <section class="view active" id="profil">
+    <main>
+      <section class="view active" id="profil">
         <div class="cover" aria-hidden="true"></div>
         <div class="id-card">
-          <div class="big-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div class="big-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg></div>
           <h1 id="userName" style="font-size:1.7rem;font-weight:800">Nama</h1>
           <p class="id-sub">Selamat datang di ruang belajarmu.</p>
+
+          <!-- Badge Study Streak -->
+          <div class="streak-badge" id="streakBadge" data-state="off">
+            <span class="streak-flame" aria-hidden="true">🔥</span>
+            <span class="streak-text">
+              <b><span id="streakCount">0</span> Hari Streak</b>
+              <small id="streakNote">Mulai streak-mu dengan belajar hari ini.</small>
+            </span>
+          </div>
         </div>
 
         <div class="quick">
-          <a href="timer.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><span><strong>Mulai Timer</strong><small>Fokus dengan Pomodoro</small></span></a>
-          <a href="planner.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><span><strong>Buka Planner</strong><small>Atur jadwal mingguan</small></span></a>
-          <a href="tips.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 22h4"/><path d="M15.1 14c.2-1 .7-1.7 1.4-2.5A4.7 4.7 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.4 2.5"/></svg></span><span><strong>Tips Belajar</strong><small>Kebiasaan yang efektif</small></span></a>
-          <a href="sumber.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span><span><strong>Sumber Belajar</strong><small>Artikel, kursus, jurnal</small></span></a>
+          <a href="timer.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg></span><span><strong>Mulai Timer</strong><small>Fokus dengan Pomodoro</small></span></a>
+          <a href="planner.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
+              </svg></span><span><strong>Buka Planner</strong><small>Atur jadwal mingguan</small></span></a>
+          <a href="sumber.html"><span class="q-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+              </svg></span><span><strong>Sumber Belajar</strong><small>Artikel, kursus, jurnal</small></span></a>
         </div>
-        <div class="profile-grid">
-          <div>
-            <div class="box" style="min-height:210px"><h3>Tentang saya</h3><p>Ceritakan sedikit tentang dirimu.</p></div>
-            <div class="box"><h3>Statistik</h3><p>Sesi fokus, jam belajar, dan rekor harianmu akan muncul di sini.</p></div>
+        <!-- Ringkasan: 4 metrik utama -->
+        <div class="kpis">
+          <div class="kpi">
+            <span class="kpi-ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg></span>
+            <span><small>Fokus hari ini</small><b id="statFocus">0 Menit</b></span>
           </div>
-          <div>
-            <div class="box" style="min-height:210px"><h3>Perjalanan</h3><p>Pencapaian belajarmu dari waktu ke waktu.</p></div>
-            <div class="box tall"><h3>Aktivitas terbaru</h3><p>Belum ada aktivitas.</p></div>
+          <div class="kpi">
+            <span class="kpi-ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg></span>
+            <span><small>Sesi Pomodoro</small><b id="statSessions">0 Sesi</b></span>
           </div>
+          <div class="kpi">
+            <span class="kpi-ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <path d="m9 11 3 3L22 4" />
+              </svg></span>
+            <span><small>Tugas selesai</small><b id="statTasks">0 / 0 Jadwal</b></span>
+          </div>
+          <div class="kpi">
+            <span class="kpi-ico navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                <path d="M4 22h16" />
+                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+              </svg></span>
+            <span><small>Rekor streak terbaik</small><b id="statBest">0 Hari</b></span>
+          </div>
+        </div>
+
+        <!-- Grafik & progres -->
+        <div class="dash-grid">
+
+          <div class="box chart-box">
+            <div class="box-head">
+              <h3>Fokus minggu ini</h3>
+              <span class="box-meta" id="chartTotal">Total 0 Menit</span>
+            </div>
+            <div id="focusChart"></div>
+          </div>
+
+          <div class="box journey-box">
+            <div class="box-head">
+              <h3>Perjalanan</h3>
+              <span class="box-meta">Target harian</span>
+            </div>
+            <div class="ring-wrap">
+              <svg class="ring" id="ringSvg" viewBox="0 0 140 140" role="img" aria-label="Progres target harian">
+                <circle class="ring-track" cx="70" cy="70" r="56" />
+                <circle class="ring-fill" id="ringFill" cx="70" cy="70" r="56" transform="rotate(-90 70 70)"
+                  stroke-dasharray="0 351.9" />
+                <text class="ring-pct" id="ringPct" x="70" y="79" text-anchor="middle">0%</text>
+              </svg>
+              <div class="ring-info">
+                <b id="goalText">0 / 60 menit</b>
+                <small id="goalNote">Sisa 60 menit lagi</small>
+              </div>
+            </div>
+            <ul class="week-dots" id="weekDots"></ul>
+          </div>
+
+          <div class="box recent-box">
+            <div class="box-head">
+              <h3>Aktivitas terbaru</h3>
+            </div>
+            <ul class="recent-list" id="recentList">
+              <li class="recent-empty">Belum ada aktivitas.</li>
+            </ul>
+          </div>
+
         </div>
       </section>
-    <footer class="foot">© 2026 StudySpace · Belajar Lebih Terarah, Raih Hasil Lebih Baik.</footer>
-  </main>
-</div>
-<script src="js/script.js"></script>
+      <footer class="foot">© 2026 StudySpace · Belajar Lebih Terarah, Raih Hasil Lebih Baik.</footer>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
