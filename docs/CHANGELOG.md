@@ -20,3 +20,4 @@
 - update tampilan dan struktur halaman
 - rapikan indentasi dan struktur html
 - perbarui fitur planner dan navigasi
+- menambahkan design guideline
