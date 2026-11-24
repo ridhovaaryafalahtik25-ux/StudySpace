@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="78 46 104 76" role="img" aria-label="StudySpace">
+  <path d="M84 72 Q108 66 130 78 C118 90 142 102 130 116 Q108 104 84 108 Z" fill="#0b5d4b"/>
+  <path d="M176 72 Q152 66 130 78 C118 90 142 102 130 116 Q152 104 176 108 Z" fill="#0d8a63"/>
+  <path d="M130 78 C118 90 142 102 130 116" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="170" cy="56" r="5" fill="#38bdf8"/>
+</svg>
