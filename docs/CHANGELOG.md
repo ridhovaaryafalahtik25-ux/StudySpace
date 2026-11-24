@@ -22,3 +22,4 @@
 - perbarui fitur planner dan navigasi
 - menambahkan design guideline
 - update mockup terbaru
+- upload wireframe ke github
