@@ -2,154 +2,80 @@
 
 **Website Panduan Belajar Efektif untuk Pelajar dan Mahasiswa**
 
-> *"Belajar Lebih Terarah, Raih Hasil Lebih Baik."*
+> *Belajar Lebih Terarah, Raih Hasil Lebih Baik.*
 
-**Tema SDGs:** SDG 4 – Pendidikan Berkualitas (Quality Education)
+**Tema proyek:** SDG 4 – Pendidikan Berkualitas (*Quality Education*)
 
 ## Deskripsi
 
-StudySpace adalah website yang menyediakan informasi sekaligus alat bantu belajar dalam satu platform. Pelajar dan mahasiswa sering kesulitan mengatur waktu belajar, menjaga fokus, mengelola tugas, dan mencatat materi, sementara alat bantunya tersebar di banyak aplikasi. StudySpace menggabungkan panduan belajar, kalender jadwal, timer Pomodoro, To-Do List, dan catatan belajar di satu tempat.
+StudySpace merupakan website pendamping belajar untuk membantu pelajar dan mahasiswa mengelola kegiatan belajar dalam satu tempat. Website ini menyediakan dashboard progres belajar, timer fokus, planner mingguan, panduan belajar, serta halaman artikel dan sumber belajar.
 
-## Tujuan Pembuatan Website
+Proyek dibuat menggunakan HTML, CSS, dan JavaScript. Data akun demo, pengaturan, statistik, serta jadwal disimpan secara lokal di browser menggunakan `localStorage`. Website belum menggunakan database maupun layanan autentikasi.
 
-- Memberikan informasi mengenai metode dan teknik belajar yang efektif.
-- Membantu pengguna menyusun jadwal belajar melalui **Study Planner**.
-- Membantu pengguna menjaga konsentrasi melalui **Pomodoro Timer**.
-- Memudahkan pengguna mencatat tugas, target, dan materi melalui **To-Do List & Study Notes**.
-- Mendukung SDG 4 melalui penyediaan informasi dan fasilitas belajar yang mudah diakses.
+## Tujuan
+
+- Menyediakan panduan dan informasi mengenai kegiatan belajar.
+- Membantu pengguna mengatur jadwal belajar mingguan.
+- Membantu pengguna menjaga fokus menggunakan timer Pomodoro.
+- Menampilkan ringkasan progres dan aktivitas belajar.
+- Menyediakan akses ke artikel dan sumber belajar dalam satu website.
 
 ## Target Pengguna
 
-| Pengguna | Kebutuhan |
-|---|---|
-| Pelajar SMP/SMA | Membangun kebiasaan belajar dan mengatur jadwal akademik |
-| Mahasiswa | Mengelola waktu kuliah, tugas, dan persiapan ujian |
-| Pengguna umum | Meningkatkan produktivitas dan menerapkan metode belajar efektif |
+- Pelajar SMP dan SMA.
+- Mahasiswa.
+- Pengguna yang ingin membangun kebiasaan belajar lebih teratur.
 
-## Fitur
+## Halaman dan Fitur
 
-### Halaman
-| Halaman | Isi |
-|---|---|
-| **Beranda (Homepage)** | Hero section (nama, deskripsi, slogan, ilustrasi, tombol "Mulai Belajar"), ringkasan Study Guide, dan ringkasan Study Tips |
-| **Panduan Belajar (Study Guide)** | Metode Pomodoro, Cornell Notes, Active Recall, Spaced Repetition; kategori Manajemen Waktu, Metode Belajar, Teknik Mencatat, Persiapan Ujian |
-| **Tips Belajar (Study Tips)** | Tiga fitur interaktif (lihat di bawah) |
-| **Tentang Kami (About Us)** | Latar belakang, tujuan, kaitan dengan SDG 4, dan profil kelompok |
-| **Profile & Settings** | Tersedia pada sidebar navigasi |
-
-### Fitur Interaktif (Tips Belajar)
-1. **Study Planner** – kalender untuk memilih tanggal, menambah, melihat, dan menghapus jadwal belajar.
-2. **Pomodoro Timer** – jalankan, jeda, ulang timer; durasi fokus dan istirahat dapat diatur.
-3. **To-Do List & Study Notes** – tambah, centang, dan hapus tugas beserta progres penyelesaian; buat, simpan, buka, dan hapus catatan.
-
-## Alur Sistem
-
-### Alur Sistem Utama
-1. Pengguna membuka website.
-2. Sistem menampilkan halaman login.
-3. Pengguna melakukan login.
-4. Sistem menampilkan halaman Beranda.
-5. Pengguna melihat pengenalan StudySpace, panduan belajar, dan tips belajar.
-6. Pengguna memilih halaman atau informasi yang ingin diakses.
-7. Sistem mengarahkan pengguna ke halaman yang sesuai.
-8. Pengguna membaca informasi pada halaman tersebut.
-9. Pengguna dapat berpindah ke halaman lain melalui navigasi utama.
-10. Pengguna mengakhiri aktivitas dengan meninggalkan website.
-
-### Alur Halaman
-
-#### Login
-1. Pengguna membuka website StudySpace.
-2. Sistem menampilkan halaman login.
-3. Pengguna memasukkan email dan password, atau menggunakan akun Google.
-4. Pengguna menekan tombol **Login**.
-5. Sistem memeriksa apakah seluruh kolom sudah diisi.
-6. Jika ada kolom kosong, sistem menampilkan pesan bahwa email dan password wajib diisi.
-7. Jika semua kolom terisi, sistem memvalidasi format email.
-8. Sistem mencocokkan email dan password dengan data akun yang tersimpan.
-9. Sistem memeriksa kesesuaian data akun.
-10. Jika salah, sistem menampilkan pesan **"Email atau password tidak sesuai"**.
-11. Jika benar, sistem membuat sesi login pengguna.
-12. Sistem mengarahkan pengguna ke halaman Beranda.
-13. Pengguna dapat mengakses fitur website sesuai status login.
-14. Jika lupa password, pengguna menekan **Forgot password**.
-15. Sistem mengarahkan pengguna ke halaman Forgot Password.
-16. Jika belum punya akun, pengguna menekan **Sign up**.
-17. Sistem mengarahkan pengguna ke halaman Sign Up.
-
-#### Beranda
-1. Pengguna berhasil login/sign up.
-2. Sistem menampilkan Homepage dengan sidebar navigasi: Homepage, Study Guide, Study Tips, About Us, Profile, Settings.
-3. Sistem menampilkan Hero Section: nama StudySpace, deskripsi singkat, slogan, gambar ilustrasi, dan tombol **Mulai Belajar**.
-4. Pengguna menekan **Mulai Belajar**.
-5. Sistem mengarahkan pengguna ke halaman lengkap Study Guide.
-6. Jika pengguna menggulir ke bawah, sistem menampilkan bagian Study Guide.
-7. Sistem menampilkan empat kategori panduan: Manajemen Waktu, Metode Belajar, Teknik Mencatat, Persiapan Ujian.
-8. Pengguna dapat memilih salah satu kategori untuk membaca panduan lebih lanjut.
-9. Pengguna dapat memilih **Lihat Semua** untuk membuka halaman Study Guide.
-10. Sistem menampilkan bagian Study Tips: Atur Jadwal Belajar, Gunakan Metode Pomodoro, Jaga Kesehatan.
-11. Pengguna dapat memilih **Lihat Semua** untuk membuka halaman Study Tips.
-12. Pengguna dapat memilih menu navigasi lain untuk berpindah halaman.
-
-## Analisis 5W1H
-
-Ringkasan analisis 5W1H StudySpace. Rincian data dan daftar pustaka lengkap ada di [`requirements.md`](requirements.md).
-
-| Unsur | Penjelasan | Data pendukung (sumber) |
+| Halaman | File | Isi dan fungsi |
 |---|---|---|
-| **What** (Apa) | Website statis yang menggabungkan panduan metode belajar dengan Study Planner, Pomodoro Timer, To-Do List, dan Study Notes. | 273 juta anak dan pemuda di dunia tidak bersekolah pada 2024 ([UN SDG Report 2026](https://unstats.un.org/sdgs/report/2026/goal-04/)). |
-| **Why** (Mengapa) | Kualitas pembelajaran masih rendah dan banyak pelajar belum memakai teknik belajar yang terbukti efektif. | Skor PISA Indonesia turun pada 2022: membaca 371 ke 359, matematika 379 ke 366, sains 396 ke 383 ([Tempo](https://www.asia-pacific-solidarity.net/news/2023-12-08/education-ministry-talks-of-drop-indonesias-pisa-2022-score.html)). Hanya sekitar 25% siswa Indonesia mencapai Level 2 membaca, rata-rata OECD 74% ([OECD](https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/indonesia_c2e1ae0e-en.html)). *Practice testing* dan *distributed practice* paling efektif, sedangkan merangkum dan membaca ulang bernilai rendah ([Dunlosky dkk., 2013](https://doi.org/10.1177/1529100612453266)). |
-| **Who** (Siapa) | Pelajar SMP/SMA, mahasiswa, dan pengguna umum. | Penetrasi internet Indonesia 80,66% pada 2025 ([detikInet](https://inet.detik.com/telecommunication/d-8047759/survei-apjii-pengguna-internet-indonesia-2025-tembus-229-juta-jiwa)); Gen Z 87,80% ([Fortune Indonesia](https://www.fortuneidn.com/tech/pengguna-internet-ri-tembus-80-persen-media-sosial-jadi-alasan-utama-00-6cmtl-rzv471)). |
-| **Where** (Di mana) | Melalui browser di desktop dan mobile, tanpa instalasi; data tersimpan di localStorage perangkat pengguna. | 83,39% pengguna internet Indonesia memakai smartphone ([Gizmologi](https://gizmologi.id/insight/survei-internet-indonesia-2025/amp/)). Sekitar 55 juta orang belum terhubung internet, ini menjadi keterbatasan ([Suara.com](https://www.suara.com/tekno/2025/08/06/190354/riset-apjii-55-juta-orang-indonesia-belum-dapat-akses-internet-di-2025)). |
-| **When** (Kapan) | Dapat dipakai kapan saja untuk jadwal harian, sesi belajar, dan persiapan ujian. | Target SDG 4 jatuh tempo 2030 dan kemajuannya dinilai masih jauh dari jalur ([SDG Action](https://sdg-action.org/sdgs/4-quality-education/)). Belajar yang disebar dalam beberapa sesi lebih efektif daripada menumpuk ([APS](https://www.psychologicalscience.org/news/releases/which-study-strategies-make-the-grade.html)). |
-| **How** (Bagaimana) | Dibangun dengan HTML, CSS, dan JavaScript tanpa database dan login; Study Planner dan panduan Active Recall serta Spaced Repetition mengacu pada teknik berbukti tinggi. | Dunlosky dkk. (2013), lihat baris Why. Pomodoro, To-Do, dan Study Notes ditampilkan sebagai alat bantu praktis, belum ada sumber penelitian khusus. |
+| Masuk | `login.html` | Form email dan kata sandi untuk masuk ke versi demo. Nama pengguna demo dibuat dari bagian email sebelum tanda `@`. |
+| Beranda | `index.html` | Dashboard yang menampilkan sapaan pengguna, jumlah hari streak, fokus hari ini, sesi Pomodoro, tugas selesai, rekor streak, grafik fokus mingguan, target harian, dan aktivitas terbaru. |
+| Timer | `timer.html` | Timer dengan mode Pomodoro, istirahat pendek, dan istirahat panjang. Pengguna dapat memulai, menjeda, melanjutkan, mengatur ulang, serta mengubah durasi setiap mode. Sesi Pomodoro yang selesai dicatat ke statistik belajar. |
+| Calendar Planner | `planner.html` | Jadwal mingguan Senin–Minggu dalam bentuk timeline. Pengguna dapat menambahkan kegiatan, menentukan jam dan kategori warna, menandai jadwal selesai, melihat riwayat, mengembalikan jadwal, dan menghapus jadwal. Sistem memberi pemberitahuan jika jadwal yang ditambahkan bertabrakan. |
+| Panduan Belajar | `panduan.html` | Halaman daftar panduan belajar. Kartu panduan dibuat melalui JavaScript dan mengarah ke halaman artikel. |
+| Artikel | `artikel.html` | Halaman detail artikel/contoh bacaan yang dapat dibuka dari kartu panduan. Konten saat ini masih berupa teks placeholder. |
+| Sumber Belajar | `sumber.html` | Daftar sumber dengan filter kategori Semua, Artikel, Kursus, dan Jurnal. Sebagian kartu masih berupa konten placeholder dan belum mengarah ke sumber eksternal. |
+| Pengaturan | `pengaturan.html` | Pengaturan nama tampilan, preferensi privasi, preferensi notifikasi, logout, dan tautan ke halaman Tentang Kami. |
+| Tentang Kami | `tentang.html` | Informasi pengenalan StudySpace dan tim. **Catatan:** bagian SDG pada halaman ini saat ini masih menyebut SDG 12, sedangkan tema proyek yang ditetapkan adalah SDG 4. Bagian tersebut perlu diselaraskan. |
 
-## Teknologi yang Digunakan
+## Penyimpanan Data
 
-HTML5 semantic
-CSS3 dengan custom properties dan responsive layout
-Figma-exported SVG/JPG assets
--
+Website menggunakan `localStorage` pada browser, tanpa database. Beberapa data yang disimpan antara lain:
 
-## Kebutuhan Nonfungsional
+| Data | Key `localStorage` | Keterangan |
+|---|---|---|
+| Nama pengguna demo | `ss_user` | Digunakan untuk menampilkan nama dan mengatur akses halaman demo. |
+| Statistik belajar | `studyspace_stats` | Menyimpan streak, menit fokus, sesi Pomodoro, tugas selesai, riwayat fokus, dan aktivitas terbaru. |
+| Jadwal planner | `ss_events` | Menyimpan jadwal mingguan beserta status penyelesaiannya. |
+| Preferensi pengaturan | Key dengan awalan `ss_` | Menyimpan pilihan privasi dan notifikasi. |
 
-- Responsif tanpa scroll horizontal pada lebar layar 360 px dan 1024 px.
-- Desain sederhana, konsisten, dan mudah dipahami.
-- Navigasi, tombol, dan tautan utama dapat diakses dengan keyboard dan memiliki indikator fokus yang terlihat.
-- Dapat digunakan langsung melalui browser tanpa mengunduh aplikasi tambahan.
+Data hanya tersedia pada browser dan perangkat tempat data dibuat. Menghapus data situs/browser dapat menghapus data StudySpace.
 
-## Batasan Sistem
+## Teknologi
 
-- Website statis berbasis HTML, CSS, dan JavaScript.
-- Data pengguna tersimpan di localStorage, sehingga hanya tersedia pada browser dan perangkat yang sama.
-- Study Planner hanya untuk jadwal sederhana dan tidak tersinkronisasi dengan aplikasi lain.
-- Pomodoro Timer tidak berjalan saat browser ditutup.
-- Materi bersifat informasi edukatif; identitas tim dan kontak dapat berupa data simulasi.
+- **HTML5** untuk struktur halaman.
+- **CSS3** untuk tampilan dan layout responsif.
+- **JavaScript** untuk navigasi demo, timer, planner, statistik, filter sumber, dan pengaturan.
+- **localStorage** untuk penyimpanan data di sisi browser.
 
 ## Struktur Folder
 
-```
-StudySpace/
-│
+```text
+StudySpace-main/
 ├── asset/
-│   └── img/
-│
+│   └── img
 ├── css/
 │   └── style.css
-│
 ├── docs/
+│   ├── CHANGELOG.md
 │   ├── requirements.md
 │   ├── sitemap.md
-│   ├── wireframe-mockup/
 │   └── testing.md
-│
 ├── js/
 │   └── script.js
-│
-├── .gitignore
-├── CHANGELOG.md
 ├── README.md
-│
 ├── artikel.html
 ├── index.html
 ├── login.html
@@ -158,56 +84,49 @@ StudySpace/
 ├── planner.html
 ├── sumber.html
 ├── tentang.html
-├── timer.html
-└── tips.html
+└── timer.html
 ```
 
 ## Cara Menjalankan
 
-1. Unduh atau clone repositori ini.
+1. Unduh atau clone repositori.
    ```bash
    git clone <url-repositori>
-   cd StudySpace
+   cd StudySpace-main
    ```
-2. Buka file `index.html` langsung di browser (Chrome, Firefox, Edge, atau Safari).
-3. Alternatif: jalankan dengan Live Server di VS Code agar perubahan langsung terlihat.
+2. Buka folder proyek menggunakan Visual Studio Code.
+3. Jalankan `login.html` melalui browser atau gunakan ekstensi **Live Server**.
+4. Masukkan email dan kata sandi pada form demo. Website menggunakan bagian awal email sebagai nama tampilan, lalu mengarahkan pengguna ke Beranda.
 
-Tidak diperlukan instalasi tambahan.
+Tidak diperlukan instalasi package atau database.
 
-## Pembagian Tugas Kelompok
+## Batasan dan Catatan Pengembangan
 
-| Anggota | Peran | Fokus | Hasil Utama |
-|---|---|---|---|
-| Ridhova Arya Falah | Ketua, Koordinator, dan Penguji | Jadwal, konfirmasi data, dokumentasi proyek, pengujian | `README.md`, `testing.md`, `CHANGELOG.md` |
-| Naailah Risqullah | Analis, Pengelola Konten, dan Penguji | Kebutuhan, teks, pemeriksaan informasi, pengujian | `requirements.md`, `testing.md` |
-| Aykho Praysila Zai | Perancang | Peta konten, wireframe, mockup, prototipe | `docs/site-structure.md`, `docs/wireframe-mockup/` |
-| Dean M Wahyudan | Perancang | Wireframe, mockup, prototipe | `docs/wireframe-mockup/` |
-| Kaylin Patricia | Pengembang (HTML, CSS, JavaScript) | Seluruh pemrograman: struktur halaman, tata letak, responsivitas, fitur interaktif | `index.html`, `css/style.css`, `js/script.js` |
-| Putri Anisa La Ananila | Pengembang (HTML, CSS, JavaScript) dan Aset | Seluruh pemrograman: komponen, fokus keyboard, fitur interaktif, gambar | `index.html`, `css/style.css`, `js/script.js`, `assets/images/` |
+- Login hanya simulasi di browser. Belum ada verifikasi kata sandi, registrasi akun, autentikasi Google/Facebook/Apple, maupun backend.
+- Data pengguna dan aktivitas tersimpan di `localStorage`, sehingga tidak tersinkronisasi antarperangkat atau antarbrowser.
+- Timer berjalan selama halaman timer terbuka. Timer tidak dijamin tetap berjalan ketika halaman atau browser ditutup.
+- Planner menggunakan jadwal mingguan, bukan kalender bulanan berbasis tanggal.
+- Konten pada halaman Panduan Belajar, Artikel, dan beberapa kartu Sumber Belajar masih berupa placeholder dan perlu diganti dengan materi serta referensi yang valid.
+- Navigasi masih memiliki tautan ke `tips.html`, tetapi file tersebut belum tersedia di repositori ini. Tautan tersebut perlu diperbaiki atau halaman terkait perlu dibuat.
+- Halaman `tentang.html` masih menampilkan SDG 12. Konten ini perlu diperbarui agar sesuai dengan tema proyek SDG 4.
+- Preferensi notifikasi pada Pengaturan saat ini disimpan sebagai pilihan pengguna; belum terhubung dengan sistem pengingat atau notifikasi browser.
 
-## Dokumentasi Perancangan
+## Dokumentasi Proyek
 
-Dokumen perancangan awal disimpan di repositori ini:
+- [Requirement Analysis](docs/requirements.md) – gambaran umum, target pengguna, kebutuhan fungsional, dan batasan.
+- [Site Structure](docs/sitemap.md) – struktur navigasi dan flowchart yang tersedia saat ini. Dokumen ini masih perlu disesuaikan dengan struktur website terbaru.
+- [Testing Checklist](docs/testing.md) – daftar pemeriksaan fitur dan tampilan.
+- [Changelog](docs/CHANGELOG.md) – riwayat perubahan proyek.
 
-| Dokumen | Lokasi |
-|---|---|
-| Rancangan Kebutuhan (Requirement Analysis, termasuk 5W1H dan data pendukung) | [`requirements.md`](requirements.md) |
-| Site Structure (struktur navigasi dan flowchart) | [`docs/site-structure.md`](docs/site-structure.md) |
-| Wireframe dan Mockup | [`docs/wireframe-mockup/`](docs/wireframe-mockup/) |
-| Menambah Mockup pada link figma | [`Figma – StudySpace`] (https://www.figma.com/design/hRGDXhytgBIzLPUVqqmImd/Untitled?node-id=0-1&t=GTYdTBkAxTFpdV2G-1)
+## Tim Pengembang
 
-## Dokumentasi Pendukung
-
-- [`requirements.md`](requirements.md) – kebutuhan fungsional, nonfungsional, dan 5W1H
-- [`testing.md`](testing.md) – hasil pengujian website
-- [`CHANGELOG.md`](CHANGELOG.md) – riwayat perubahan
-
-## Alur Kontribusi
-
-- Semua anggota ditambahkan sebagai **Collaborator** di repositori (Settings → Collaborators), dan setiap anggota melakukan commit dengan akun GitHub masing-masing agar tampil di daftar **Contributors**.
-- Pengembangan dilakukan bertahap. Setiap fitur yang sudah jadi langsung di-*commit* dan di-*push*, bukan diunggah sekaligus di akhir.
-- Contoh pesan commit: `feat: tambah Pomodoro Timer`, `fix: perbaiki scroll horizontal di 360 px`, `docs: lengkapi requirements.md`.
+- Ridhova Arya Falah
+- Naailah Risqullah
+- Aykho Praysila Zai
+- Dean M Wahyudan
+- Kaylin Patricia
+- Putri Anisa La Ananila
 
 ## Kaitan dengan SDG 4
 
-StudySpace mendukung **SDG 4: Pendidikan Berkualitas** dengan menyediakan panduan dan alat bantu belajar yang gratis, mudah diakses lewat browser, dan tidak memerlukan aplikasi tambahan.
+StudySpace dikembangkan dengan tema **SDG 4: Pendidikan Berkualitas**. Melalui panduan belajar dan alat bantu pengelolaan kegiatan belajar, proyek ini diharapkan dapat mendukung kebiasaan belajar yang lebih terarah dan akses informasi belajar yang lebih mudah. Penyebutan SDG pada halaman Tentang Kami masih perlu diselaraskan dengan tema tersebut.
