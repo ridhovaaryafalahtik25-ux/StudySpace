@@ -23,3 +23,4 @@
 - menambahkan design guideline
 - update mockup terbaru
 - upload wireframe ke github
+- upload mockup ke github
