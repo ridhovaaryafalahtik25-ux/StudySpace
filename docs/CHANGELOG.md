@@ -16,3 +16,8 @@
 - Membuat Wireframe terbaru
 ## 2.4 - 2026-11-22
 - Update Mockup Terbaru
+## 2.5 - 2026-11-24
+- update tampilan dan struktur halaman
+- rapikan indentasi dan struktur html
+- perbarui fitur planner dan navigasi
+- hapus file timer
