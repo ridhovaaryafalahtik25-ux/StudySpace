@@ -14,9 +14,9 @@ StudySpace adalah website berbasis front-end untuk membantu pelajar dan mahasisw
 3. **Artikel:** menampilkan kumpulan kartu artikel, dan detail artikel.
 4. **Sumber Belajar:** menampilkan daftar sumber dengan kategori Artikel, Kursus, dan Jurnal.
 5. **Calendar Planner:** menampilkan jadwal mingguan, tab penambahan kegiatan, status selesai, dan riwayat.
-6. **Timer:** menyediakan mode Pomodoro, istirahat pendek, dan istirahat panjang.
+6. **Timer:** menyediakan mode Pomodoro, istirahat pendek, istirahat panjang, dan kontrol start/pause/reset.
 7. **Pengaturan:** mengelola nama tampilan, preferensi, dan proses keluar.
-8. **Tentang Kami:** menampilkan informasi mengenai proyek dan tim.
+8. **Tentang Kami:** menampilkan informasi mengenai proyek dan tim, pengenalan Study Space, dan SDG.
 9. **Login:** menyediakan form masuk simulasi pada sisi front-end.
 
 ## 4. Kebutuhan Fungsional
