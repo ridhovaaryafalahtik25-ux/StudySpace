@@ -24,3 +24,4 @@
 - update mockup terbaru
 - upload wireframe ke github
 - upload mockup ke github
+- Update requirement struktur halaman
