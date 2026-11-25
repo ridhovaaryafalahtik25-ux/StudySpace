@@ -67,54 +67,7 @@ StudySpace
 ```
 
 ## 3. Flowchart Navigasi
-
-```mermaid
-flowchart TD
-    A([Pengguna membuka website]) --> B[Halaman Login]
-
-    B --> C{Pilih aksi}
-    C -->|Login| D{Kolom terisi dan data benar?}
-    C -->|Login dengan Google| F
-    C -->|Lupa password| G[Forgot Password]
-    C -->|Belum punya akun| H[Sign Up]
-
-    D -->|Tidak| E["Pesan error: Email atau password tidak sesuai"]
-    E --> B
-    D -->|Ya| F[Sesi login dibuat]
-
-    G --> B
-    H --> F
-
-    F --> I[Beranda]
-
-    I --> J[Hero Section]
-    I --> K[Ringkasan Study Guide]
-    I --> L[Ringkasan Study Tips]
-
-    J -->|Mulai Belajar| M[Study Guide]
-    K -->|Pilih kategori / Lihat Semua| M
-    L -->|Lihat Semua| N[Study Tips]
-
-    I --> S{{Sidebar Navigasi}}
-    M --> S
-    N --> S
-    O[About Us] --> S
-    P[Profile] --> S
-    Q[Settings] --> S
-
-    S --> I
-    S --> M
-    S --> N
-    S --> O
-    S --> P
-    S --> Q
-
-    N --> N1[Study Planner]
-    N --> N2[Pomodoro Timer]
-    N --> N3[To-Do List dan Study Notes]
-
-    S --> R([Pengguna meninggalkan website])
-```
+ (Proses)
 
 ## 4. Struktur Sidebar Navigasi
 
