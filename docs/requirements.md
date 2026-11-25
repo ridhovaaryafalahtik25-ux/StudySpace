@@ -1,37 +1,55 @@
-# Requirement Analysis - StudySpace
+# Requirement Analysis - Study Space
 
-## Gambaran Umum
-StudySpace adalah website panduan belajar untuk pelajar dan mahasiswa yang menyediakan materi belajar serta alat bantu pengelolaan kegiatan belajar.
+## 1. Gambaran Umum
+StudySpace adalah website berbasis front-end untuk membantu pelajar dan mahasiswa mengakses panduan belajar, membaca artikel, sumber belajar, mengatur jadwal, dan mengelola waktu fokus.
 
-## Target Pengguna
-Pelajar SMP/SMA, mahasiswa, dan pengguna yang ingin membangun kebiasaan belajar lebih teratur.
+## 2. Target Pengguna
+- Pelajar SMP/SMA/Sederajat.
+- Mahasiswa/i.
+- Pengguna yang ingin mengatur jadwal dan waktu belajar.
 
-## Struktur Halaman Berdasarkan Wireframe
-1. Beranda: slogan/pengenalan, ringkasan panduan, kalender mini, dan To-Do List.
-2. Panduan Belajar: kartu-kartu metode belajar dan halaman detail materi.
-3. Tips Belajar: akses menuju Study Planner, Pomodoro Timer, serta To-Do List & Study Notes.
-4. Study Planner: kalender bulanan, pemilihan tanggal, tambah dan hapus jadwal.
-5. Pomodoro Timer: mode Pomodoro, Short Break, Long Break, kontrol start/pause/reset, dan pengaturan durasi.
-6. Tentang Kami: pengenalan StudySpace, SDG 4, dan profil tim.
-7. Login: tampilan prototype sesuai wireframe, belum terhubung autentikasi.
+## 3. Struktur Halaman
+1. **Beranda:** menampilkan nama pengguna, streak, statistik fokus, sesi Pomodoro, ringkasan jadwal, target harian, grafik fokus mingguan, dan aktivitas terbaru.
+2. **Panduan Belajar:** menampilkan catatan kosong, waktu belajar, persiapan ujian, motivasi, fokus dan konsentrasi, dan mulai belajar.
+3. **Artikel:** menampilkan kumpulan kartu artikel, dan detail artikel.
+4. **Sumber Belajar:** menampilkan daftar sumber dengan kategori Artikel, Kursus, dan Jurnal.
+5. **Calendar Planner:** menampilkan jadwal mingguan, tab penambahan kegiatan, status selesai, dan riwayat.
+6. **Timer:** menyediakan mode Pomodoro, istirahat pendek, dan istirahat panjang.
+7. **Pengaturan:** mengelola nama tampilan, preferensi, dan proses keluar.
+8. **Tentang Kami:** menampilkan informasi mengenai proyek dan tim.
+9. **Login:** menyediakan form masuk simulasi pada sisi front-end.
 
-## Kebutuhan Fungsional
-- KF-01: Navigasi ke seluruh halaman utama.
-- KF-02: Menampilkan minimal empat metode belajar dalam bentuk kartu.
-- KF-03: Menampilkan detail panduan belajar.
-- KF-04: Kalender dapat berpindah bulan dan memilih tanggal.
-- KF-05: Pengguna dapat menambah dan menghapus jadwal; data tersimpan di localStorage.
-- KF-06: Timer memiliki tiga mode, start/pause/reset, dan pengaturan durasi.
-- KF-07: Study Notes dapat menyimpan, membuka, dan menghapus catatan.
-- KF-08: Halaman Tentang Kami menampilkan informasi SDG 4 dan tim.
-- KF-09: Halaman login hanya berupa prototype visual.
+## 4. Kebutuhan Fungsional
+- KF-01: Pengguna dapat berpindah ke halaman yang tersedia melalui navigasi.
+- KF-02: Beranda menampilkan informasi profil dan ringkasan aktivitas belajar.
+- KF-03: Halaman Panduan Belajar menampilkan kartu-kartu panduan.
+- KF-04: Kartu panduan dapat membuka halaman Artikel sesuai tautan yang ditentukan.
+- KF-05: Halaman Sumber Belajar menampilkan kategori Artikel, Kursus, dan Jurnal.
+- KF-06: Calendar Planner menampilkan jadwal mingguan.
+- KF-07: Pengguna dapat menambah kegiatan dengan informasi hari, waktu, dan warna.
+- KF-08: Pengguna dapat menandai kegiatan selesai, melihat riwayat, mengembalikan, dan menghapus kegiatan.
+- KF-09: Timer menyediakan tiga mode, yaitu Pomodoro, istirahat pendek, dan istirahat panjang.
+- KF-10: Timer menyediakan kontrol mulai, jeda/lanjut, reset, dan pengaturan durasi.
+- KF-11: Pengaturan memungkinkan pengguna mengubah nama tampilan dan preferensi yang tersedia.
+- KF-12: Pengguna dapat keluar dari sesi simulasi.
+- KF-13: Data tertentu disimpan pada `localStorage`.
 
-## Kebutuhan Nonfungsional
-- KN-01: Tampilan responsif untuk desktop dan ponsel.
-- KN-02: Navigasi dan komponen konsisten mengikuti wireframe.
-- KN-03: Website dapat dijalankan melalui browser tanpa instalasi aplikasi.
-- KN-04: Menggunakan HTML, CSS, dan JavaScript.
-- KN-05: Data planner, tugas, dan catatan disimpan pada localStorage browser.
+## 5. Kebutuhan Nonfungsional
+- KN-01: Website dapat diakses melalui browser desktop maupun perangkat mobile.
+- KN-02: Tampilan dan navigasi konsisten di seluruh halaman.
+- KN-03: Website dibangun menggunakan HTML, CSS, dan JavaScript.
+- KN-04: Website tidak memerlukan instalasi aplikasi tambahan.
+- KN-05: Interaksi dasar dapat digunakan melalui perangkat dengan ukuran layar berbeda.
 
-## Batasan
-Website belum menggunakan database, akun, autentikasi, atau sinkronisasi antarperangkat. Login hanya prototype.
+## 6. Penyimpanan dan Batasan
+- Data aplikasi disimpan pada `localStorage` browser.
+- Data tidak tersinkronisasi antarperangkat.
+- Website belum menggunakan database.
+- Login merupakan simulasi front-end, bukan autentikasi akun sungguhan.
+- Preferensi yang tersedia belum tentu terhubung ke layanan notifikasi atau privasi eksternal.
+- Konten panduan, artikel, dan sumber belajar perlu ditinjau sebelum menjadi materi final.
+
+## 7. Di Luar Cakupan
+- To-Do List dan Study Notes sebagai fitur mandiri.
+- Sinkronisasi data lintas perangkat.
+- Autentikasi dan pengelolaan akun berbasis server.
