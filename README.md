@@ -64,8 +64,6 @@ Data hanya tersedia pada browser dan perangkat tempat data dibuat. Menghapus dat
 
 ```text
 StudySpace-main/
-├── asset/
-│   └── img
 ├── css/
 │   └── style.css
 ├── docs/
@@ -73,6 +71,7 @@ StudySpace-main/
 │   ├── requirements.md
 │   ├── sitemap.md
 │   └── testing.md
+├── Images
 ├── js/
 │   └── script.js
 ├── README.md
@@ -117,6 +116,7 @@ Tidak diperlukan instalasi package atau database.
 - [Site Structure](docs/sitemap.md) – struktur navigasi dan flowchart yang tersedia saat ini. Dokumen ini masih perlu disesuaikan dengan struktur website terbaru.
 - [Testing Checklist](docs/testing.md) – daftar pemeriksaan fitur dan tampilan.
 - [Changelog](docs/CHANGELOG.md) – riwayat perubahan proyek.
+- [Asset/Images](/images) – Kumpulan Dokumentasi dan Asset untuk kebutuhan proyek
 
 ## Tim Pengembang
 
