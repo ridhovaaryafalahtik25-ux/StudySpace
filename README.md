@@ -12,6 +12,16 @@ StudySpace merupakan website pendamping belajar untuk membantu pelajar dan mahas
 
 Proyek dibuat menggunakan HTML, CSS, dan JavaScript. Data akun demo, pengaturan, statistik, serta jadwal disimpan secara lokal di browser menggunakan `localStorage`. Website belum menggunakan database maupun layanan autentikasi.
 
+## Latar Belakang
+
+**Pendidikan berkualitas sebagai tujuan global.** SDG 4 bertujuan memastikan pendidikan yang inklusif dan berkualitas serta mendorong kesempatan belajar sepanjang hayat untuk semua orang. PBB menilai Tujuan 4 sebagai pendorong penting pembangunan berkelanjutan, tetapi kemajuannya masih di bawah target [1][2]. Pada 2019, hanya 58% siswa di dunia yang mencapai kemampuan membaca minimum di akhir sekolah dasar. Selain itu, antara 2018 dan 2022 rata-rata nilai matematika di 81 negara OECD dan mitra turun 15 poin, sedangkan nilai membaca turun 10 poin [1].
+
+**Kondisi di Indonesia.** Hasil PISA 2022 Indonesia termasuk yang terendah yang pernah tercatat di tiga bidang yang diuji, setara capaian tahun 2003 untuk membaca dan matematika serta 2006 untuk sains [3]. Hasil PISA 2025 relatif sama dengan 2022 dan masih di bawah capaian 2015. Hanya 37% siswa Indonesia mencapai Level 2 atau lebih di sains, sedangkan rata-rata OECD adalah 74% [4].
+
+**Kebiasaan belajar menentukan hasil.** Perbaikan pendidikan membutuhkan upaya di banyak sisi, dan salah satunya adalah membantu siswa mengatur cara belajarnya sendiri. Tinjauan Dunlosky dkk. (2013) terhadap 10 teknik belajar menilai *practice testing* dan *distributed practice* sebagai teknik dengan manfaat tinggi karena efektif untuk berbagai usia, kemampuan, dan jenis tugas. Sebaliknya, merangkum, menandai teks, dan membaca ulang dinilai kurang bermanfaat meskipun paling sering digunakan siswa [5]. Dua teknik yang efektif tersebut sejalan dengan *Active Recall* dan *Spaced Repetition* yang dibahas pada halaman Sumber Belajar StudySpace.
+
+**Pengaturan waktu dan istirahat.** Teknik Pomodoro membagi belajar menjadi blok 25 menit dengan istirahat 5 menit, dan setelah empat blok diberikan istirahat lebih panjang selama 15–30 menit [7]. Bukti ilmiahnya masih beragam. Studi pada 87 mahasiswa di Belanda menemukan bahwa istirahat terjadwal memberi manfaat pada suasana hati dan tampak lebih efisien dibanding istirahat yang diatur sendiri [6]. Studi lain justru menemukan istirahat Pomodoro membuat kelelahan naik dan motivasi turun lebih cepat, walaupun hasil akhirnya tidak berbeda [7]. Karena itu, StudySpace menyediakan pengaturan durasi timer agar pengguna dapat menyesuaikan pola belajarnya.
+
 ## Tujuan
 
 - Menyediakan panduan dan informasi mengenai kegiatan belajar.
@@ -34,9 +44,9 @@ Proyek dibuat menggunakan HTML, CSS, dan JavaScript. Data akun demo, pengaturan,
 | Beranda | `index.html` | Dashboard yang menampilkan sapaan pengguna, jumlah hari streak, fokus hari ini, sesi Pomodoro, tugas selesai, rekor streak, grafik fokus mingguan, target harian, dan aktivitas terbaru. |
 | Timer | `timer.html` | Timer dengan mode Pomodoro, istirahat pendek, dan istirahat panjang. Pengguna dapat memulai, menjeda, melanjutkan, mengatur ulang, serta mengubah durasi setiap mode. Sesi Pomodoro yang selesai dicatat ke statistik belajar. |
 | Calendar Planner | `planner.html` | Jadwal mingguan Senin–Minggu dalam bentuk timeline. Pengguna dapat menambahkan kegiatan, menentukan jam dan kategori warna, menandai jadwal selesai, melihat riwayat, mengembalikan jadwal, dan menghapus jadwal. Sistem memberi pemberitahuan jika jadwal yang ditambahkan bertabrakan. |
-| Panduan Belajar | `panduan.html` | Halaman daftar panduan belajar. Kartu panduan dibuat melalui JavaScript dan mengarah ke halaman artikel. |
-| Artikel | `artikel.html` | Halaman detail artikel/contoh bacaan yang dapat dibuka dari kartu panduan. Konten saat ini masih berupa teks placeholder. |
-| Sumber Belajar | `sumber.html` | Daftar sumber dengan filter kategori Semua, Artikel, Kursus, dan Jurnal. Sebagian kartu masih berupa konten placeholder dan belum mengarah ke sumber eksternal. |
+| Panduan Belajar | `panduan.html` | Halaman berisi 6 panduan belajar (Mulai Belajar, Mengatur Waktu, Membuat Catatan, Persiapan Ujian, Fokus dan Konsentrasi, Menjaga Motivasi). Kartu panduan dibuat melalui JavaScript. |
+| Artikel | `artikel.html` | Halaman detail artikel yang dibuka dari kartu kategori Artikel di halaman Sumber Belajar (`artikel.html?id=…`). Saat ini menampilkan judul dan ringkasan artikel. |
+| Sumber Belajar | `sumber.html` | Daftar 8 sumber (4 artikel, 3 kursus, 1 jurnal) dengan filter kategori Semua, Artikel, Kursus, dan Jurnal. Kartu Artikel membuka halaman detail; kartu Kursus dan Jurnal belum mengarah ke sumber eksternal. |
 | Pengaturan | `pengaturan.html` | Pengaturan nama tampilan, preferensi privasi, preferensi notifikasi, logout, dan tautan ke halaman Tentang Kami. |
 | Tentang Kami | `tentang.html` | Informasi pengenalan StudySpace dan tim. **Catatan:** bagian SDG pada halaman ini saat ini masih menyebut SDG 12, sedangkan tema proyek yang ditetapkan adalah SDG 4. Bagian tersebut perlu diselaraskan. |
 
@@ -105,8 +115,8 @@ Tidak diperlukan instalasi package atau database.
 - Data pengguna dan aktivitas tersimpan di `localStorage`, sehingga tidak tersinkronisasi antarperangkat atau antarbrowser.
 - Timer berjalan selama halaman timer terbuka. Timer tidak dijamin tetap berjalan ketika halaman atau browser ditutup.
 - Planner menggunakan jadwal mingguan, bukan kalender bulanan berbasis tanggal.
-- Konten pada halaman Panduan Belajar, Artikel, dan beberapa kartu Sumber Belajar masih berupa placeholder dan perlu diganti dengan materi serta referensi yang valid.
-- Navigasi masih memiliki tautan ke `tips.html`, tetapi file tersebut belum tersedia di repositori ini. Tautan tersebut perlu diperbaiki atau halaman terkait perlu dibuat.
+- Halaman Artikel baru memuat judul dan ringkasan. Kartu Kursus dan Jurnal pada Sumber Belajar belum memiliki tautan ke sumber asli dan perlu dilengkapi dengan referensi yang valid.
+- Sidebar pada `pengaturan.html` masih memiliki tautan ke `tips.html`, tetapi file tersebut belum tersedia di repositori ini. Tautan tersebut perlu diperbaiki atau halaman Tips Belajar perlu dibuat.
 - Halaman `tentang.html` masih menampilkan SDG 12. Konten ini perlu diperbarui agar sesuai dengan tema proyek SDG 4.
 - Preferensi notifikasi pada Pengaturan saat ini disimpan sebagai pilihan pengguna; belum terhubung dengan sistem pengingat atau notifikasi browser.
 
@@ -129,4 +139,4 @@ Tidak diperlukan instalasi package atau database.
 
 ## Kaitan dengan SDG 4
 
-StudySpace dikembangkan dengan tema **SDG 4: Pendidikan Berkualitas**. Melalui panduan belajar dan alat bantu pengelolaan kegiatan belajar, proyek ini diharapkan dapat mendukung kebiasaan belajar yang lebih terarah dan akses informasi belajar yang lebih mudah. Penyebutan SDG pada halaman Tentang Kami masih perlu diselaraskan dengan tema tersebut.
+StudySpace dikembangkan dengan tema **SDG 4: Pendidikan Berkualitas**. Proyek ini tidak dimaksudkan menyelesaikan persoalan pendidikan secara nasional, tetapi menjadi alat bantu di tingkat individu. Melalui panduan belajar, timer Pomodoro, planner mingguan, serta artikel dan sumber belajar dalam satu platform, StudySpace diharapkan mendukung kebiasaan belajar mandiri yang lebih terarah dan akses informasi belajar yang lebih mudah, sejalan dengan semangat belajar sepanjang hayat pada SDG 4. Penyebutan SDG pada halaman Tentang Kami masih perlu diselaraskan dengan tema tersebut.
